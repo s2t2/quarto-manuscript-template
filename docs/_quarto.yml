@@ -1,4 +1,5 @@
 # https://quarto.org/docs/manuscripts/components.html
+# https://quarto.org/docs/manuscripts/authoring/jupyterlab.html#front-matter
 # https://quarto.org/docs/reference/projects/manuscripts.html
 
 project:
@@ -7,16 +8,24 @@ project:
 
 manuscript:
   article: index.qmd
-  #meca-bundle: true
-  #meca-bundle: "bundle.zip"
   manuscript-url: https://s2t2.github.io/quarto-manuscript-template
-  #code-links:
-  # - https://github.com/s2t2/quarto-manuscript-template
+
+  code-links:
+    - text: Code File XYZ
+      icon: file-code
+      href: https://github.com/s2t2/quarto-manuscript-template
+
   #notebooks:
-  #resources:
-  #- data/earthquakes.csv
+
+  resources:
+    # https://corgis-edu.github.io/corgis/datasets/csv/earthquakes/earthquakes.csv
+    - data/earthquakes.csv
 
 bibliography: references.bib
+
+#execute:
+#  freeze: true
+#
 
 format:
   html: default
@@ -30,16 +39,12 @@ format:
   # https://quarto.org/docs/extensions/listing-journals.html
   #
 
-  # https://github.com/quarto-journals/plos#readme
-  # quarto install extension quarto-journals/plos docs/
-  #plos-pdf:
-  #  keep-tex: true
-
   # https://github.com/mikemahoney218/quarto-arxiv
   # quarto install extension mikemahoney218/quarto-arxiv
   #arxiv-pdf:
   #  keep-tex: true
 
-#execute:
-#  freeze: true
-#
+  # https://github.com/quarto-journals/plos#readme
+  # quarto install extension quarto-journals/plos docs/
+  #plos-pdf:
+  #  keep-tex: true
