@@ -38,12 +38,14 @@ key-points:
 
 date: last-modified
 
-bibliography: references.bib
+#bibliography: references.bib
 
 citation:
   container-title: Earth and Space Science
 
 number-sections: true
+
+jupyter: python3
 ---
 
 ## Introduction {#sec-intro}
@@ -132,6 +134,19 @@ This is a table.
 ### Method 2
 
 This is a subsection.
+
+This is a dataframe table:
+
+
+```{python}
+#| label: tbl-quakes
+#| tbl-cap: "Earthquakes"
+
+from pandas import read_csv
+
+df = read_csv("data/earthquakes.csv")
+df.head()
+```
 
 
 ## Discussion {#sec-discussion}

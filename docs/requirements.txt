@@ -13,3 +13,4 @@ jupyter
 # packages required by any python code / notebooks:
 numpy
 matplotlib
+pandas
