@@ -53,6 +53,13 @@ citation:
   #doi: 10.1145/3514174
 
 number-sections: true
+
+#format:
+#  html:
+#    code-fold: false
+jupyter: python3
+execute:
+  cache: true # re-render only when source changes
 ---
 
 ## Introduction {#sec-intro}
@@ -64,9 +71,16 @@ This is a reference [@knuth84].
 
 Another reference [@rossetti2023bots].
 
+
+## Including Section
+
+{{< include _included.qmd >}}
+
+
 ## Results {#sec-results}
 
 The results section.
+
 
 ### Result 1
 
